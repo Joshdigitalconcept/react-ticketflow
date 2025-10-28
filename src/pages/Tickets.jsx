@@ -40,12 +40,6 @@ export default function Tickets() {
             >
               + New Ticket
             </Link>
-            <button
-              onClick={logout}
-              className="bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 transition shadow-sm"
-            >
-              Logout
-            </button>
           </div>
         </div>
       </header>
@@ -100,6 +94,14 @@ export default function Tickets() {
           )}
         </div>
       </section>
+      <div className="mt-10 text-center">
+            <Link
+              to="/dashboard"
+              className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition shadow-md"
+            >
+              Dashboard
+            </Link>
+          </div>
     </div>
   )
 }

@@ -40,3 +40,24 @@
 .read-the-docs {
   color: #888;
 }
+/* Decorative Circles */
+.circle-deco-1 {
+  @apply absolute w-96 h-96 bg-green-500/15 rounded-full top-[-150px] right-[-80px] pointer-events-none;
+}
+.circle-deco-2 {
+  @apply absolute w-72 h-72 bg-amber-500/20 rounded-full bottom-10 left-[-100px] pointer-events-none;
+}
+.circle-deco-3 {
+  @apply absolute w-48 h-48 bg-purple-500/10 rounded-full top-40 right-40 pointer-events-none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .circle-deco-1 { @apply w-52 h-52 top-[-80px] right-[-40px]; }
+  .circle-deco-2 { @apply w-40 h-40 left-[-60px]; }
+  .circle-deco-3 { @apply hidden; }
+}
+
+/* Status Colors */
+.text-status-open { @apply text-green-500; }
+.text-status-progress { @apply text-amber-500; }

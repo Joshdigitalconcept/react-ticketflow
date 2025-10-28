@@ -22,7 +22,7 @@ export default function Login() {
       toast.success('Welcome back!')
       navigate('/dashboard')
     } else {
-      const msg = 'Invalid email or password'
+      const msg = 'Invalid email or password (Make use of the test email)'
       setError(msg)
       toast.error(msg)
     }
